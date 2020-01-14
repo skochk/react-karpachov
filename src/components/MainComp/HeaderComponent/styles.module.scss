@@ -1,0 +1,25 @@
+@font-face{
+    font-family: 'Proxima Nova', sans-serif
+}
+
+body{
+    margin: 0;
+}
+.header{
+    height: 75px;
+    background-color: #fff;
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.rightSide{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    font-size: 16px;
+    color: #222B3A;
+}

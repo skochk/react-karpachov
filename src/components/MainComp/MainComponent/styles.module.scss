@@ -1,0 +1,38 @@
+body{
+    font-size: 16px;
+}
+
+
+.bg{
+    height: 500px;
+    background-image:url('./img/donut.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+.stringh1{
+    position: absolute;
+    width: 880px;
+    height: 82px;
+    left: -350px;
+    top: 184px;
+    padding-right: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #222B3A;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 38px;
+}
+.info_text{
+    padding-top: 280px;
+    width: 465px;
+}

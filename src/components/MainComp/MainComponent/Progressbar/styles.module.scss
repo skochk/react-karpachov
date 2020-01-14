@@ -1,0 +1,42 @@
+.screen1_themes_counter{
+    margin-top: 32px;
+
+    .themes_counter_string{
+        width: 468px;
+        height: 15px;
+        background: #F3F3F3;
+        border: 1px solid #F3F3F3;
+        box-sizing: border-box;
+        border-radius: 3px;
+
+        .themes_counter_percent{
+            margin-top: 2px;
+            margin-bottom: 1px;
+            margin-left: 2px;
+            background: #296DCE;
+            border-radius: 2px;
+            width: 259px; 
+            height: 9px;
+        }
+    }
+
+    .themes_total_info{
+        color: white;
+        width: 340px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+
+        .total_info_nubmer{
+            font-size: 38px;
+        }
+        .total_info_text{
+            width: 50px;
+            font-size: 14px;
+        }
+        .total_info_text{
+            margin-left: 10px;
+            margin-right: 150px;
+        }
+    }
+}
