@@ -1,0 +1,80 @@
+
+body{
+    background-color: #fff;
+    font-family: "Proxima Nova" sans-serif;
+
+
+.boxZero{
+
+    .blockNubmer{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-color: #FFA43F;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        padding:40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .leftImage{
+            height: 80px;
+            width: 80px;
+        }
+
+      
+
+        .secondBox{
+            display: flex;
+            align-items: center;
+
+
+            .middleRow{
+                margin-left: 40px;;
+                // border: 1px solid black;
+                display:flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+
+                .firstRow{
+                    margin-bottom: 20px;
+                }
+                .mainTitle{
+                    font-size: 24px;
+                    max-width: 680px;
+                    margin-bottom: 20px;
+                }
+                .whatToDo{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin-right: 5px;
+                    }
+                    .viewMore{
+                        color: #FF8A00;
+                    }
+                    
+
+                    .beAlerted{
+                        margin-left: 20px;
+                        color: #696969;
+                        font-size: 18px;
+                    }
+                }
+            }
+      
+        }
+    }
+    
+
+    }
+  
+
+}

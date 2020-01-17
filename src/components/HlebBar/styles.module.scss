@@ -1,0 +1,32 @@
+.row{
+    background:#FAFAFA;
+
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+    .item{
+        padding-right: 20px;
+    }
+    .fuckingrow{
+        margin-right: 20px;
+    }
+    .fuckingrow{
+        width: 22px;
+        height: 1px;
+        left: 329px;
+        top: 610px;
+        border: 1px solid #979FAD;
+        background-color: #979FAD;
+    }
+    .item:first-child{
+        margin: 0;
+    }
+}
+
+

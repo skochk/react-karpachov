@@ -1,10 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-size: 16px;
 }
 
 
 .bg{
-    height: 500px;
     background-image:url('./img/donut.png');
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -33,6 +36,14 @@ body{
     font-size: 38px;
 }
 .info_text{
-    padding-top: 280px;
+    padding-top: 200px;
     width: 465px;
+}
+
+
+.actual_name{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding-bottom: 5px;
 }
