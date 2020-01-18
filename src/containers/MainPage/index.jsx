@@ -11,7 +11,7 @@ export default function(){
       <Header />
       <FirstComponent />
       <HlebBar />
-      <SliderComponent item={HandleQuestions}/>
+      <SliderComponent item={HandleQuestions} title="Проработать"/>
 
     </>
   )

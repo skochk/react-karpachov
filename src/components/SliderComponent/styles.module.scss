@@ -5,6 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    font-family: "Proxima Nova" sans-serif;
+    font-weight: bold;
     .container{
         width: 900px;
         margin:0 auto;
@@ -14,7 +16,7 @@
         .littlerow{
             width: 22px;
             height: 0px;
-            border: 2px solid #222B3A;
+            border: 1px solid #222B3A;
             margin-right: 20px;
             background-color: #222B3A;
         }

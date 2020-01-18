@@ -4,7 +4,12 @@ class index extends Component {
     render() {
         return (
             <div className={styles.main} onClick={this.props.click}>
-                Развернуть
+                <div className={styles.container}>
+                    <div className={styles.littlerow}></div>
+                    <div className={styles.text}>{this.props.title}</div>
+                    <div className={styles.line}></div>
+                </div>
+                
             </div>
         );
     }
