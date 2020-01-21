@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import TinyStringComponent from '../../components/TinyStringComponent';
 import styles from './styles.module.scss'; 
 import triangle from './img/triangle.png';
 
@@ -7,7 +6,8 @@ class index extends Component {
     constructor(props){
         super(props);
         this.state ={
-            isOpened: true
+            isOpened: true,
+            itemlist: []
         }
         this.changeOpenStatus = this.changeOpenStatus.bind(this);   
     }
@@ -20,14 +20,16 @@ class index extends Component {
             this.setState({isOpened:true})
         }
     }
+    
 
 
     render() {
-        let returnedItem;
-        if(this.state.isOpened ==true){
-            returnedItem =
-            <>
-                <div className={styles.main} onClick={this.changeOpenStatus}>
+        
+            return (
+                <>
+                
+                {this.state.isOpened ? 
+                <><div className={styles.main} onClick={this.changeOpenStatus}>
                     <div className={styles.container}>
                         <div className={styles.littlerow}></div>
                         <div className={styles.text}>{this.props.title}</div>
@@ -35,25 +37,16 @@ class index extends Component {
                         <img src={triangle} className={styles.triangle}></img>
                     </div>
                 </div>
-                <this.props.item />  
-            </>;
-        }
-        else{
-            returnedItem =  
-            <>
+                <this.props.item itemlist={this.props.itemlist} bgcolor={this.props.bgcolor}/> </> : 
                 <div className={styles.main} onClick={this.changeOpenStatus}>
-                    <div className={styles.container}>
-                        <div className={styles.littlerow}></div>
-                        <div className={styles.text}>{this.props.title}</div>
-                        <div className={styles.line}></div>
-                        <img src={triangle} className={styles.triangle} style={{transform: "rotate(90deg)"}}></img>
-                    </div>
+                <div className={styles.container}>
+                    <div className={styles.littlerow}></div>
+                    <div className={styles.text}>{this.props.title}</div>
+                    <div className={styles.line}></div>
+                    <img src={triangle} className={styles.triangle} style={{transform: "rotate(90deg)"}}></img>
                 </div>
-            </>;
-        }
-            return (
-                <>
-                {returnedItem}
+            </div>
+                }
                 </>
             )
         

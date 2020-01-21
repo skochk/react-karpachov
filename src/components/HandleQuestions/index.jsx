@@ -12,72 +12,73 @@ class index extends Component {
 
     constructor(props){
         super(props);
-          this.state ={
-              itemlist :   []
-              }
+        //   this.state ={
+        //       itemlist :   []
+        //       }
         }
    
       
-    componentDidMount(){
-        this.setState({
-            itemlist:[
-                {
-                    img:threeCube,
-                    tasks:
-                        {
-                            type: 'article',
-                            time: '1 час 15 минут',
-                        },
-                    mainText:'Формирование эмоциональной связи с родителями',
-                },
-                {
-                    img:sunImg,
-                    tasks:
-                    {
-                        type: 'test',
-                        time: '30 минут',
-                    },
-                    mainText:'Объяснить отцу и\или другим членами семьи, проживают с вами о предстоящем этапе в вашей семье',
-                },
-                {
-                    img:thinking,
-                    tasks:
-                    {
-                        type: 'article',
-                        time: '1 час 15 минут',
-                    },
-                    mainText:'Формирование эмоциональной связи с родителями',
-                },
-                {
-                    img:thinking,
-                    tasks:
-                    {
-                        type: 'article',
-                        time: '1 час 15 минут',
-                    },
-                    mainText:'Формирование эмоциональной связи с родителями',
-                },
-                {
-                    img:thinking,
-                    tasks:
-                    {
-                        type: 'practice',
-                        time: '30 минут',
-                    },
-                    mainText:'Объяснить отцу и\или другим членами семьи, проживают с вами о предстоящем этапе в вашей семье',
-                },
+    // componentDidMount(){
+    //     this.setState({
+    //         itemlist:[
+    //             {
+    //                 img:threeCube,
+    //                 tasks:
+    //                     {
+    //                         type: 'article',
+    //                         time: '1 час 15 минут',
+    //                     },
+    //                 mainText:'Формирование эмоциональной связи с родителями',
+    //             },
+    //             {
+    //                 img:sunImg,
+    //                 tasks:
+    //                 {
+    //                     type: 'test',
+    //                     time: '30 минут',
+    //                 },
+    //                 mainText:'Объяснить отцу и\или другим членами семьи, проживают с вами о предстоящем этапе в вашей семье',
+    //             },
+    //             {
+    //                 img:thinking,
+    //                 tasks:
+    //                 {
+    //                     type: 'article',
+    //                     time: '1 час 15 минут',
+    //                 },
+    //                 mainText:'Формирование эмоциональной связи с родителями',
+    //             },
+    //             {
+    //                 img:thinking,
+    //                 tasks:
+    //                 {
+    //                     type: 'article',
+    //                     time: '1 час 15 минут',
+    //                 },
+    //                 mainText:'Формирование эмоциональной связи с родителями',
+    //             },
+    //             {
+    //                 img:thinking,
+    //                 tasks:
+    //                 {
+    //                     type: 'practice',
+    //                     time: '30 минут',
+    //                 },
+    //                 mainText:'Объяснить отцу и\или другим членами семьи, проживают с вами о предстоящем этапе в вашей семье',
+    //             },
                 
                 
                 
-            ]
-        })
-    }
-
+    //         ]
+    //     })
+    // }
+       
     render() {
+        
         return (
-            <div className={styles.bigbox}>
+            <div className={styles.bigbox} style={this.props.bgcolor ? {backgroundColor: this.props.bgcolor}: null}>
                 <div  className={styles.container}>
-                    {this.state.itemlist.map((item, index)=>{
+                    {this.props.itemlist.map((item, index)=>{
                   
                         return(
                             <ItemWithCheckbox item={item} index={index}/>
