@@ -37,7 +37,8 @@ class index extends Component {
                         <img src={triangle} className={styles.triangle}></img>
                     </div>
                 </div>
-                <this.props.item itemlist={this.props.itemlist} bgcolor={this.props.bgcolor}/> </> : 
+                <this.props.item itemlist={this.props.itemlist} bgcolor={this.props.bgcolor}/> </> 
+                : 
                 <div className={styles.main} onClick={this.changeOpenStatus}>
                 <div className={styles.container}>
                     <div className={styles.littlerow}></div>

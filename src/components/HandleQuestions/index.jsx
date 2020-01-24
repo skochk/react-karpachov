@@ -76,7 +76,7 @@ class index extends Component {
     render() {
         
         return (
-            <div className={styles.bigbox} style={this.props.bgcolor ? {backgroundColor: this.props.bgcolor}: null}>
+            <div className={styles.bigbox}>
                 <div  className={styles.container}>
                     {this.props.itemlist.map((item, index)=>{
                   

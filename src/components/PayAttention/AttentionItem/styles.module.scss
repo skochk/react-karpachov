@@ -1,0 +1,35 @@
+
+.slider{
+    min-width: 860px;
+    height: 70px;
+    background: #FAFAFA;
+    border: 1px solid #EAEAEA;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px ;
+    font-size: 22px;
+    .text{
+        margin-left: 10px;
+    }
+    .leftside{
+        display: flex;
+       
+    }
+}
+
+.slider:nth-child(1){
+    margin-top: 40px;
+}
+
+.content{
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    box-sizing: border-box;
+    width: 900px;
+    font-size: 16px;
+    padding: 30px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+}
