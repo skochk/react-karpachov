@@ -5,6 +5,8 @@ import HlebBar from '../../components/HlebBar';
 import SliderComponent from '../../components/SliderComponent';
 import HandleQuestions from '../../components/HandleQuestions';
 import PayAttention from '../../components/PayAttention';
+import Footer from '../../components/Footer';
+import FooterString from '../../components/FooterString'
 
 
 import threeCube from './img/3cube.png';
@@ -133,6 +135,8 @@ render(){
       <SliderComponent item={HandleQuestions} itemlist={this.state.itemlistHandleQuestion} title="Проработать"/>
       <SliderComponent item={HandleQuestions} itemlist={this.state.itemlistAddTasks} title="Дополнительные задания"/>
       <SliderComponent item={PayAttention} itemlist={this.state.itemlistPayAtt} title="Обратить внимание"/>
+      <Footer/>
+      <FooterString/>
     </>
   )
 }

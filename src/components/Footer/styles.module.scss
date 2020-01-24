@@ -1,0 +1,30 @@
+.content{
+    background: #0099DD;
+    height: 350px;
+    .container{
+        width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding-top: 20px;
+        font-size: 14px;
+
+        .section_name{
+            font-size: 24px;
+        }
+
+        .section_dash{
+            margin: 12px 0 25px 0;
+            width: 30px;
+            height: 3px;
+            background: #FFFFFF;
+        }
+        ul{
+            ol{
+                margin-bottom: 14px;
+            }
+        }
+    }
+
+}
